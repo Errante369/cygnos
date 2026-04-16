@@ -1,0 +1,12 @@
+{
+  "name": "Cygnos Blog",
+  "version": "1.0.0",
+  "description": "Bilingual blog about offensive security, AI, and technology",
+  "main": "_config.yml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Errante369/cygnos"
+  },
+  "keywords": ["security", "red-team", "ai", "blog"],
+  "license": "MIT"
+}
