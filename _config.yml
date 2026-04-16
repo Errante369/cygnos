@@ -1,0 +1,53 @@
+lang: en
+timezone: America/Lima
+title: Cygnos
+tagline: Offensive Security · AI · Technology
+description: >-
+  Bilingual blog about offensive security, AI red teaming, and technology.
+  Red Team consultant sharing practical knowledge.
+url: "https://errante369.github.io"
+baseurl: "/cygnos"
+permalink: /posts/:title/
+
+github:
+  username: Errante369
+
+social:
+  name: Cygnos
+  links:
+    - https://github.com/Errante369
+
+theme: jekyll-theme-chirpy
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs/
+  - README.md
+  - LICENSE

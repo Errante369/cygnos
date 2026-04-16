@@ -1,0 +1,28 @@
+---
+title: "Bienvenido a Cygnos"
+lang: es
+date: 2026-04-15
+categories: [blog]
+tags: [intro]
+layout: post
+toc: false
+redirect_from: /posts/bienvenido-a-cygnos/
+---
+
+## Bienvenido
+
+Este es **Cygnos** — un espacio bilingüe sobre seguridad ofensiva, AI red teaming e insights tecnológicos prácticos.
+
+### Qué encontrarás aquí
+
+- **Seguridad Ofensiva**: Ataques a Active Directory, pentesting web, operaciones de red team
+- **Seguridad en AI**: Prompt injection, red teaming a LLMs, machine learning adversarial
+- **Herramientas y Técnicas**: Writeups prácticos, reseñas de herramientas, discusiones metodológicas
+
+### Por qué bilingüe
+
+El contenido se publicará en **inglés** y **español** para servir tanto a la comunidad global de seguridad como a la audiencia latinoamericana.
+
+---
+
+*Pronto los primeros posts técnicos.*
