@@ -115,7 +115,7 @@
                 {{ tongue | upcase }}
               </a>
             {% else %}
-              <a class="lang-name" href="/{{ tongue }}{{ page.url }}" style="margin: 0 0.3rem;">
+              <a class="lang-name" href="{{ '/' | append: tongue | append: page.url | relative_url }}" style="margin: 0 0.3rem;">
                 {{ tongue | upcase }}
               </a>
             {% endif %}
