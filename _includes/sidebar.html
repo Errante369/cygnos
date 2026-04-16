@@ -110,18 +110,29 @@
               {{ tongue | upcase }}
             </span>
           {% else %}
-            {% if tongue == site.default_lang %}
-              <a class="lang-name" href="{{ page.url | relative_url }}" style="margin: 0 0.3rem;">
-                {{ tongue | upcase }}
-              </a>
-            {% else %}
-              <a class="lang-name" href="{{ '/' | append: tongue | append: page.url | relative_url }}" style="margin: 0 0.3rem;">
-                {{ tongue | upcase }}
-              </a>
-            {% endif %}
+            <a class="lang-name"
+               href="#"
+               onclick="event.preventDefault();switchLang('{{ tongue }}')"
+               style="margin: 0 0.3rem;">
+              {{ tongue | upcase }}
+            </a>
           {% endif %}
         {% endfor %}
       </div>
+      <script>
+        function switchLang(targetLang) {
+          var baseurl = '{{ site.baseurl }}';
+          var current = window.location.pathname;
+          var isEn = current.indexOf('/en/') !== -1;
+          var path;
+          if (targetLang === 'en') {
+            path = baseurl + '/en' + current.replace(baseurl, '').replace(/^\/en/, '');
+          } else {
+            path = baseurl + current.replace(baseurl, '').replace(/^\/en/, '');
+          }
+          window.location.href = path;
+        }
+      </script>
     {% endif %}
   </div>
   <!-- .sidebar-bottom -->
